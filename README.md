@@ -9,6 +9,9 @@ Sample programs for the fun of it.
 3. Create user basic
 4. Create user along with avatar image.
 5. Create user using(Net::Http)
+6. Update user.
+7. Update ticket custom fields.
+8. Delete ticket
 
 Troubleshoot:
 ------------
@@ -23,7 +26,8 @@ ruby:
  request.basic_auth("sample@freshdesk.com","test")
 
 Java:
- request.setHeader("Authorization", "Basic " + Base64.encodeBase64String("username:password".getBytes()));
+
+ request.setHeader("Authorization", "Basic " + Base64.encodeBase64String("username:password".getBytes())); //Note the blankspace after "Basic".
 
 Note:
 -----
