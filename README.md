@@ -10,8 +10,10 @@ Sample programs for the fun of it.
 4. Create user along with avatar image.
 5. Create user using(Net::Http)
 6. Update user.
-7. Update ticket custom fields.
-8. Delete ticket
+7. Update user avatar(image).
+8. Update ticket custom fields.
+9. Delete ticket
+10. Fetch contacts by query string.
 
 Troubleshoot:
 ------------
