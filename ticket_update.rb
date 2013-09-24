@@ -1,5 +1,4 @@
-#@author : John Paul.H
-#Update ticket fields like priority, status[only these two properties are allowed to be modified].
+#Update ticket properties.(both default and custom properties.)
 require "rubygems"
 require "rest_client"
 require "json"

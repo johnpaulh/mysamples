@@ -14,6 +14,10 @@ Sample programs for the fun of it.
 8. Update ticket custom fields.
 9. Delete ticket
 10. Fetch contacts by query string.
+11. View ticket.
+12. View contact.
+13. Restore ticket.
+14. Assign ticket.
 
 Troubleshoot:
 ------------
