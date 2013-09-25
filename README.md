@@ -21,6 +21,10 @@ Sample programs for the fun of it.
 15. delete user.
 16. rate a ticket response(survey rating)
 17. view survey result for the ticket.
+18. create customer
+19. update customer
+20. view customer
+21. delete customer
 
 Troubleshoot:
 ------------
