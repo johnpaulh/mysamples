@@ -1,4 +1,4 @@
-#find a user with query string
+#view tickets
 require "rubygems"
 require "rest_client"
 require "json"
