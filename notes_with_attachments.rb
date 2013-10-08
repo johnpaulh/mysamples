@@ -9,8 +9,9 @@ require 'json'
 site = RestClient::Resource.new('http://yourcompany.domain.com/helpdesk/tickets/[ticket_id]/conversations/note.json',"sample@freshdesk.com","test")
 # site = RestClient::Resource.new('http://mycompany.freshdesk.com/helpdesk/tickets/91/conversations/note.json',"sample@freshdesk.com","test")
 
+#you can set private to false to make it a public note
 #attachments should be of the form array of Hash with files mapped to the key 'resource'. 
-temp = {:body_html=>"<strong>Hi there</strong>Notes with attachment added 1",:attachments=>{''=>[{:resource=>File.new("tommy.jpg", 'rb')},{:resource=>File.new("tommy1.jpg", 'rb')}]}}
+temp = {:body_html=>"<strong>Hi there</strong>Notes with attachment added 1",:private=>true,:attachments=>{''=>[{:resource=>File.new("tommy.jpg", 'rb')},{:resource=>File.new("tommy1.jpg", 'rb')}]}}
 
 response = site.post({:helpdesk_note=>temp},:content_type=>"application/json")
 
