@@ -8,7 +8,7 @@ require "json"
 params = URI.escape("query=phone is 987654321")
 puts "#{params}"
 site = RestClient::Resource.new("http://yourcompany.freshdesk.com/contacts.json?state=all&#{params}","sample@freshdesk.com","test")
-#you can do the same for attributes like eg: email. you can also use "email is johnpaul@freshdesk.com"
+#you can do the same for attributes like eg: email. you can also use "email is john@abc.com"
 #'state' attribute defines either the user is verified or not,if not specified only verified users will be displayed.
 
 #to view all contacts
