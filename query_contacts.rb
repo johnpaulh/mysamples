@@ -5,7 +5,7 @@ require "json"
 
 #you can also use apikey instead of user/passwd
 
-params = URI.escape("query=name is john")
+params = URI.escape("query=phone is 987654321")
 puts "#{params}"
 site = RestClient::Resource.new("http://yourcompany.freshdesk.com/contacts.json?state=all&#{params}","sample@freshdesk.com","test")
 #you can do the same for attributes like eg: external_id, email. you can also use "email like john"
