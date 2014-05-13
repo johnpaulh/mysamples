@@ -13,6 +13,6 @@ site = RestClient::Resource.new("http://domain.freshdesk.com/solution/categories
 #Status: 1-Draft,2-Published	
 #art_type: 1-Permanent,2-Workaround
 
-response = site.put({:solution_article=>{:title=>"updated article", :seo_data=>{:meta_title=>"new title",:meta_keywords=>"mykey"},:description => "Testing"}},:content_type=>"application/json")
+response = site.put({:solution_article=>{:title=>"updated article", :seo_data=>{:meta_description=>"article help",:meta_title=>"new title",:meta_keywords=>"mykey"},:description => "Testing"}},:content_type=>"application/json")
 
 puts "response: #{response.code} \n #{response.body} \n"
